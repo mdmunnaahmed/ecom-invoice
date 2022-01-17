@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="invoice-container">
+        <!-- Invoice Header -->
+        <div class="invoice__logo__area">
+            <img class="logo" src="./assets/images/logo.png">
+            <h4 class="invoice-text">Invoice</h4>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <div class="invoice__meta">
+                <div class=""><strong>Date:</strong> 02 Dec, 2021</div>
+                <div class=""> <strong>Invoice No: BG1058</strong></div>
+            </div>
+
+            <div class="invoice__from__to">
+                <div> <strong>Invoiced To:</strong>
+                    <address>
+                        <strong>Rina Cobb</strong>
+                    </address>
+                </div>
+                
+                <div class="payto__content"> 
+                    <strong>Pay To:</strong>
+                    <address>
+                        Business Globalizer<br>
+                        <div>
+                            <span class="i-title">
+                                Asia –
+                            </span>
+                            <span class="info">
+                                House -09,Road-09,Sector-09,Uttara ,Dhaka
+                            </span>
+                        </div>
+                        <div>
+                            <span class="i-title">
+                                UK –
+                            </span>
+                            <span class="info">
+                                903 31st ave FL 1 Woodside NYC 11377
+                            </span>
+                        </div>
+                        <div>
+                            <span class="i-title">
+                                USA –
+                            </span>
+                            <span class="info">
+                                903 31st ave FL 1 Woodside NYC 11377
+                            </span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+            <table class="table mb-0">
+                <thead class="card-header">
+                    <tr>
+                        <td>Ordered At</td>
+                        <td>Plan/Service</td>
+                        <td>Price</td>
+                        <td>Discount</td>
+                        <td>Payment Type</td>
+                        <td>Payment Status</td>
+                        <td>Order Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Ordered At">02 Dec, 2021</td>
+                        <td data-label="Plan/Service">
+                            <strong>Employment Identification Number (EIN)</strong>
+                        </td>
+                        <td data-label="Price">
+                            <strong>85.00 USD</strong>
+                        </td>
+                        <td data-label="Price">0.00 USD</td>
+                        <td data-label="Payment Type">Stripe Hosted - USD</td>
+
+                        <td data-label="Peyment Status"><span class="badge badge--success ">Success</span></td>
+                        <td data-label="Order Status"><span class="badge badge--warning ">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <ul class="invoice__info">
+                <li>
+                    <span class="title"><strong>Sub Total:</strong></span>
+                    <span class="value">$85.00</span>
+                </li>
+                <li>
+                    <span class="title"><strong>Discount:</strong></span>
+                    <span class="value">$0.00</span>
+                </li>
+                <li>
+                    <span class="title"><strong>Total:</strong></span>
+                    <span class="value">$85.00</span>
+                </li>
+            </ul>
+        </main>
+
+        <!-- Footer -->
+        <div class="invoice__footer">
+            <p class="text-1"><strong>NOTE :</strong>This is computer generated receipt and does not require physical signature.</p>
+            <div class="btn-group btn-group-sm d-print-none" style="margin-top: 35px;"> 
+                <a onclick="myPrintFunction()" id="print" class="btn btn-sm btn--info"><i class="fas fa-print"></i></a>
+                <a href="#0" class="btn btn--info btn-sm" style="margin-left: 25px;"><i class="fas fa-forward"></i></a> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
